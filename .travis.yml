@@ -34,7 +34,7 @@ install:
   - travis_install_nightly
 
 script:
-  - travis_run_tests
+  - TRAVIS_PULL_REQUEST="1" coverage run ./travis/travis_run_tests
 
 after_success:
   coveralls
