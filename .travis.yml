@@ -33,7 +33,7 @@ install:
 
 script:
   - travis_run_tests
-  - self_tests
+  - test_pylint
 
 after_success:
   - LINT_CHECK="0" travis_after_tests_success
