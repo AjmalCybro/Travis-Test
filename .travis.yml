@@ -34,7 +34,7 @@ install:
 script:
   - travis_run_tests
   - test_pylint
-  - run_pylint
+  - self_tests
 
 after_success:
   - LINT_CHECK="0" travis_after_tests_success
