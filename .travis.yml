@@ -34,7 +34,6 @@ install:
 script:
   - travis_run_tests
   - test_pylint
-  - test_flake8
 
 after_success:
   - LINT_CHECK="0" travis_after_tests_success
