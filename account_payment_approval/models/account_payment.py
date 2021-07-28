@@ -60,7 +60,7 @@ class AccountPayment(models.Model):
             self.move_id._post(soft=False)
 
     def _check_payment_approval(self):
-        if self.state == "draft"
+        if self.state == "draft":
             first_approval = self.env['ir.config_parameter'].sudo().get_param(
                 'account_payment_approval.payment_approval')
             if first_approval:
